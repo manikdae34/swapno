@@ -45,7 +45,7 @@ def signIn(request):
 		    messages.error(request,"Invalid username or password.")
     form = UserLoginForm()
     context= {'form' : form}
-    return render(request, "base/signin.html", context)
+    return render(request, "base/signIn.html", context)
 
 
 def signOut(request):
